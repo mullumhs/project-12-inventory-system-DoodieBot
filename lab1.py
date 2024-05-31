@@ -11,14 +11,19 @@
 # Step 1: Define the Item class with initialisation that uses setters for name, price, and quantity.
 # Instead of directly setting private attributes in the __init__ method, use the class's own setters
 # We will define the setters in later steps to add validation to the setting of these attributes.
-
+class Items:
+    def __init__(self, name, price, quanity,):
+        self.set_name(name)
+        self.set_price(price)
+        self.set_quantity(quanity)
 
 
 
 
 # Step 2: Implement a getter for the name attribute.
 # This method should simply return the value of the private _name attribute.
-
+def get_name(self):
+    return self._name
 
 
 
@@ -26,7 +31,10 @@
 # Step 3: Implement a setter for the name attribute.
 # This method should check if the provided value is a string before setting the _name attribute.
 # If the value is not a string, it should raise a ValueError.
-
+def set_name(self,name):
+    if name=="":
+        raise ValueError("Price cannot be negative.")
+    self.name=
 
 
 
