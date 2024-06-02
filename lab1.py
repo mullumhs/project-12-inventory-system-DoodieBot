@@ -33,25 +33,23 @@ def get_name(self):
 # If the value is not a string, it should raise a ValueError.
 def set_name(self,name):
     if name=="":
-        raise ValueError("Price cannot be negative.")
-    self.name=
-
-
+        raise ValueError(" please  enter a name.")
+    self.name=name
 
 
 # Step 4: Implement a getter for the price attribute.
 # This method should return the price formatted as a string with two decimal places.
 
-
-
-
+def get_price(self):
+    return f"${self._price:.2f}" 
+ 
 
 # Step 5: Implement a setter for the price attribute.
 # This method should check if the provided value is a non-negative number before setting the _price attribute.
 # If the value is negative, it should raise a ValueError.
 
-
-
+def set_price(self, price):
+    if isinstance(price, (float, int)) and price > 0 :
 
 
 # Step 6: Implement a getter for the quantity attribute.
