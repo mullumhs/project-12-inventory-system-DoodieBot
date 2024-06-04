@@ -50,27 +50,26 @@ def get_price(self):
 
 def set_price(self, price):
     if isinstance(price, (float, int)) and price > 0 :
+        self._price = price
 
 
 # Step 6: Implement a getter for the quantity attribute.
 # This method should simply return the value of the private _quantity attribute.
 
-
-
+def get_guanity(self):
+    return self.quanity
 
 
 # Step 7: Implement a setter for the quantity attribute.
 # This method should check if the provided value is a non-negative integer before setting the _quantity attribute.
 # If the value is negative, it should raise a ValueError.
 
-
-
+def set_quanity(self, quanity):
+    if isinstance(quanity, (float, int)) and quanity > 0 :
+        self._quanity = quanity
 
 
 # Step 8: Create instances of the Item class and demonstrate the use of getters and setters.
 # For example, create a new Item and attempt to set its attributes with both valid and invalid values.
 # Print the outputs using the getters to show how the data is managed internally.
-
-
-
 
