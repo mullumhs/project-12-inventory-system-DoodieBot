@@ -11,7 +11,7 @@
 # Step 1: Define the Item class with initialisation that uses setters for name, price, and quantity.
 # Instead of directly setting private attributes in the __init__ method, use the class's own setters
 # We will define the setters in later steps to add validation to the setting of these attributes.
-class Items:
+class Item:
     def __init__(self, name, price, quanity,):
         self.set_name(name)
         self.set_price(price)
