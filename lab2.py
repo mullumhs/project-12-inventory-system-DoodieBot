@@ -28,5 +28,16 @@ class inventory_manager:
 # E.g. add items to the inventory, remove items, update items, and display the inventory.
 
 def add_item(self, item):
-    for item in self.items:
+    for exist_item in self.items:
+        if exist_item.get_name() == item.get_name():
+            return False
+    self.item.append(item)
+    return True
+
+
+def remove_item(self, item):
+    for exist_item in self.items:
+        if exist_item.get_name() == item.get_name():
+            self.item.remove
+            return False
 
