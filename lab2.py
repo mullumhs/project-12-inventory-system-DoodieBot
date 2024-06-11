@@ -28,9 +28,17 @@ class inventory_manager:
 # E.g. add items to the inventory, remove items, update items, and display the inventory.
 
 def add_item(self, item):
+    
+    # going through list 
     for exist_item in self.items:
+        
+        # gets item and checks to see if it is input
         if exist_item.get_name() == item.get_name():
+            
+            # stops function/loop
             return False
+    
+    #
     self.item.append(item)
     return True
 
@@ -41,3 +49,18 @@ def remove_item(self, item):
             self.item.remove
             return False
 
+
+def update_item(self, item, new_price):
+    for exist_item in self.items:
+        if exist_item.get_name() == item.get_name():
+            # update certain aspect of item
+            exist_item.set_price(new_price)
+            #if everything works code item updates then ends task
+            return True
+        # if item is not found
+        return False
+
+
+def display_items(self):
+    for item in self.items:
+            print(f"item name: {item.get_item_}")
